@@ -11,18 +11,18 @@ int main(void)
 	int j;
 	int k;
 
-	for (i = 0; i < 10; i++)
+	for (i = 10; i < 20; i++)
 	{
-		for (j = 0; j < 10; i++)
+		for (j = 10; j < 20; i++)
 		{
-			for (k = 0; k < 10; k++)
+			for (k = 10; k < 20; k++)
 			{
 				if (k > j && j >i)
 				{
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(k + '0');
-					if (i != 7 || j != 8 || k != 9)
+					putchar((i % 10) + '0');
+					putchar((j % 10) + '0');
+					putchar((k % 10) + '0');
+					if ((i % 10) != 7 || (j % 10) != 8 || (k % 10) != 9)
 					{
 						putchar(',');
 						putchar(' ');
