@@ -4,7 +4,7 @@
  *
  * @n: the given number
  *
- * return: 1 if positive, 0 if null, -1 if negative
+ * Return: 1 if positive, 0 if null, -1 if negative
  *
  */
 int print_sign(int n)
