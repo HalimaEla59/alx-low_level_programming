@@ -68,3 +68,5 @@ void print_square(int size);
  * @size: size of triangle
  */
 void print_triangle(int size);
+
+#endif /* MAIN_H */
