@@ -1,5 +1,5 @@
 #include "main.h"
-#include "2-strlen.c"
+#include <stdio.h>
 
 /**
  * print_array - prints n numbers from the the array
