@@ -2,7 +2,7 @@
 #include "2-strlen.c"
 
 /**
- * strcpy - copies the string pointed by src to the buffer pointed by dest
+ * _strcpy - copies the string pointed by src to the buffer pointed by dest
  *
  * @dest: pointer char
  * @src: pointer char
