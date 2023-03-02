@@ -15,18 +15,20 @@ char *cap_string(char *s)
 
 	while (s[i] != '\0')
 	{
-		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
+		if (i == 0 && s[i] >= 97 && s[i] <= 122)
 		{
 			s[i] = s[i] - 32;
 		}
+
 		while (sp[j] != '\0')
 		{
-			if ( sp[j] == s[i] && (s[i + 1] >= 'a' && s[i + 1] <= 'z'))
+			if ( sp[j] == s[i] && (s[i + 1] >= 97 && s[i + 1] <= 122))
 			{
 				s[i + 1] = s[i + 1] - 32;
 			}
 			j++;
 		}
+
 		i++;
 	}
 	return (s);
