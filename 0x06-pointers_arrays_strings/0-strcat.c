@@ -3,7 +3,7 @@
 /**
  * _strcat - concatenates two strings
  *
- * @dets: pointer char to past at the end in place of \\0
+ * @dest: pointer char to past at the end in place of \\0
  * @src: pointer char to copy
  * Return: a pointer to the returning string
  */
@@ -13,11 +13,8 @@ char *_strcat(char *dest, char *src)
 	int i;
 	int j;
 
-	i = 0;
-	while (dest[i] != '\0')
-	{
-		i++;
-	}
+	for (i = 0; dest[i] != '\0'; i++)
+	{}
 
 	for (j = 0; src[j] != '\0'; j++)
 	{
