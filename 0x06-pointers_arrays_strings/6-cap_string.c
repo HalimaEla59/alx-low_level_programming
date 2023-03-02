@@ -10,11 +10,11 @@
 int _indexOf(char c)
 {
 	int i;
-	char SpChArray[13] = {' ', '.', ',', ';', ',', '!', '?', '(', ')', '{', '}', '\n', '\t'};
+	char SCArr[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
 	for (i = 0; i < 13; i++)
 	{
-		if (SpChArray[i] == a)
+		if (SCArr[i] == a)
 			return (1);
 	}
 	return (0);
