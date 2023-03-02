@@ -70,4 +70,17 @@ char *cap_string(char *s);
  */
 char *leet(char *s);
 
+/**
+ * rot13 - encodes strings with rot13
+ * @s: the given string
+ * Return: pointer to the resulting string
+ */
+char *rot13(char *s);
+
+/**
+ * print_number - printes an integer
+ * @n: the given int
+ */
+void print_number(int n);
+
 #endif
