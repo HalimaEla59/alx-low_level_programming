@@ -1,3 +1,5 @@
+#ifndef MAIN_H
+#define MAIN_H
 
 /**
  * _putchar - writes the character c
@@ -68,3 +70,5 @@ void print_chessboard(char (*a)[8]);
  * @size: the size
  */
 void print_diagsums(int *a, int size);
+
+#endif
