@@ -1,5 +1,5 @@
 #include "main.h"
-int is_perfect_squarre(int n, int i);
+int is_perfect_square(int n, int i);
 
 /**
  * _sqrt_recursion - returns the natural square root of a number
