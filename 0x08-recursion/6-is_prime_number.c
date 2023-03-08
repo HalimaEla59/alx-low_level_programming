@@ -9,27 +9,24 @@ int checker(int n, int i);
 
 int is_prime_number(int n)
 {
-	if (n <= 1)
+	int i = 2;
+	
+	if (n < 2)
 		return (0);
-	else if (checker(n, n / 2) > 0)
-		return (1);
-	else
-		return (0);
+	return (checker(n, i));
 }
 
 /**
  * checker - checkes if n is a prime number
  * @n: input
- * @i: in the fct above, initialised with the value of n / 2,
- * then decrements i - 1 (we will check if > 0)
- * Return: the result
+ * @i: will be initialized by 2, then increments until n
+ * Return: 1 if prime, 0 otherwise
  */
 int checker(int n, int i)
 {
-	if (i == 0)
-		return (1);
-	if (n % i == 0)
+	if (n % i == 0 && n != i)
 		return (0);
-	else
-		return (checker(n, i - 1));
+	if (n % i != 0 && i < n)
+		return (checker(n, i + 1));
+	return (1);
 }
