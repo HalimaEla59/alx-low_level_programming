@@ -29,5 +29,5 @@ int checker(int n, int i)
 	if (n % i == 0)
 		return (0);
 	else
-		return (checker(n, i - 1);
+		return (checker(n, i - 1));
 }
