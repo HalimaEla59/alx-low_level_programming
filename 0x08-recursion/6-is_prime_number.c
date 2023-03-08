@@ -1,5 +1,5 @@
 #include "main.h"
-int checker(int n: int i);
+int checker(int n, int i);
 
 /**
  * is_prime_number - executes the prime cecker
