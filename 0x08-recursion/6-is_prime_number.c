@@ -13,13 +13,15 @@ int is_prime_number(int n)
 		return (0);
 	else if (checker(n, n / 2) > 0)
 		return (1);
-	return (0);
+	else
+		return (0);
 }
 
 /**
  * checker - checkes if n is a prime number
  * @n: input
- * @i: in the fct above, initialised with the value of n / 2, then decrements i - 1 (we will check if > 0)
+ * @i: in the fct above, initialised with the value of n / 2,
+ * then decrements i - 1 (we will check if > 0)
  * Return: the result
  */
 int checker(int n, int i)
