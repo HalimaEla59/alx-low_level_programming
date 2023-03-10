@@ -5,7 +5,6 @@
  * main - adds positive numbers, prints 0 if no numb given
  * @argc: arguments
  * @argv: array pointing to arguments
- * atoi() fct converts strings to ints
  * Return: 0, 1 if error
  */
 
@@ -16,7 +15,8 @@ int main(int argc, char **argv)
 
 	if (argc < 1)
 	{
-		return(0);
+		printf("0\n");
+		return(1);
 	}
 	for (i = 1; i < argc; i++)
 	{
