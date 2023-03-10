@@ -17,3 +17,59 @@ int _isupper(int c)
 	return (0);
 }
 
+0-memset.c/     0           0     0     644     361       `
+#include "main.h"
+
+/**
+ * _memset - fills memory with a constant byte
+ *
+ * @s: pointers pointes to the memory area
+ * @b: the constant byte
+ * @n: the number of bytes of the memory area
+ *
+ * Return: pointer to the memory area s
+ */
+
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+	{
+		s[i] = b;
+	}
+
+	return (s);
+}
+
+0-strcat.c/     0           0     0     644     409       `
+#include "main.h"
+
+/**
+ * _strcat - concatenates two strings
+ *
+ * @dest: pointer char to past at the end in place of \\0
+ * @src: pointer char to copy
+ * Return: a pointer to the returning string
+ */
+
+char *_strcat(char *dest, char *src)
+{
+	int i;
+	int j;
+
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+
+	for (j = 0; src[j] != '\0'; j++)
+	{
+		dest[i + j] = src[j];
+	}
+
+	dest[i + j] = '\0';
+	return (dest);
+}
+
