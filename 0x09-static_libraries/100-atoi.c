@@ -11,6 +11,7 @@ int _atoi(char *s)
 {
 	int i;
 	int np = 0;
+	int c;
 	int d = 1;
 	int num = 0;
 
