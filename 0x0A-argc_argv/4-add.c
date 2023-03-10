@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - adds positiv numbers, prints 0 if no numb given
+ * main - adds positive numbers, prints 0 if no numb given
  * @argc: arguments
  * @argv: array pointing to arguments
  * atoi() fct converts strings to ints
@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 			printf("Error\n");
 			return (1);
 		}
-		s += argv[i];
+		s += atoi(argv[i]);
 	}
 	printf("%d\n", s);
 	return (0);
