@@ -3,9 +3,9 @@
 #include "main.h"
 
 /**
- * strdup - returns a pointer to a new str that is a duplicate of the given str
+ * _strdup - returns a pointer to a new str that is a duplicate of the given str
  * @str: the given string
- * Return: NULL if insufficient memory or str = NULL, otherwise pointer to the dup str
+ * Return: NULL if no memory or str = NULL, otherwise pointer to the dup str
  */
 
 char *_strdup(char *str)
@@ -18,10 +18,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	for (size = 0; size <= *str; size++)
+	for (size = 0; str[size] != '\0'; size++)
 	{
 	}
-	size += 1;
+	size = size + 1;
 	array = malloc(sizeof(char) * size);
 	if (array == NULL)
 	{
