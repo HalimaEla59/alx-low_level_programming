@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
-#include "3-alloc_grid.c"
 
 /**
  * free_grid - frees 2 dimention grid
