@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "function_pointer.h"
+#include "function_pointers.h"
 
 /**
  * array_iterator - executes a given fct as a parameter on each elem of arr
@@ -11,7 +11,7 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
+	unsigned int i;
 
 	if (array == NULL || action == NULL)
 		return;
