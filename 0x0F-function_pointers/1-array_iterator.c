@@ -3,7 +3,7 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - executes a given fct as a parameter on each elem of arr
+ * array_iterator - executes a given fct on each elem of arr
  * @array: the given array
  * @size: size of the arr
  * @ction: pointer to the fct to use
