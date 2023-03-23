@@ -15,11 +15,11 @@ int main(int argc, char *argv[])
 	{
 		int a;
 		int b;
-		int (*fct)(int, int);
+		int (*func)(int, int);
 
 		a = atoi(argv[1]);
 		b = atoi(argv[3]);
-		fct = get_op_func(argv[2]);
+		func = get_op_func(argv[2]);
 
 		if ((*argv[2] == '/' || *argv[2] == '%') && b == 0)
 		{
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 			exit(100);
 		}
 
-		printf("%d\n", fct(a, b));
+		printf("%d\n", func(a, b));
 		return (0);
 	}
 	
