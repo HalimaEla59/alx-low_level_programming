@@ -15,7 +15,6 @@ int main(int argc, char *argv[])
 	{
 		int a;
 		int b;
-		int result;
 		int (*fct)(int, int);
 		char *operation
 
@@ -30,11 +29,12 @@ int main(int argc, char *argv[])
 		}
 
 		fct = get_op_func(operation);
-		result = fct(a, b);
-		printf("%d\n", result);
+		printf("%d\n", fct(a, b));
 		return (0);
 	}
-	
-	printf("Error\n");
-	exit(98);
+	else
+	{
+		printf("Error\n");
+		exit(98);
+	}
 }
