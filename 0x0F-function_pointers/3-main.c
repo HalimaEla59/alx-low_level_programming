@@ -22,6 +22,12 @@ int main(int argc, char *argv[])
 		b = atoi(argv[3]);
 		operation = argv[2];
 
+		if (get_op_func(argv[2]) == NULL)
+		{
+			printf("Error\n");
+			exit(99);
+		}
+
 		if ((*operation == '/' || *operation == '%') && (b == 0))
 		{
 			printf("Error\n");
@@ -32,9 +38,7 @@ int main(int argc, char *argv[])
 		printf("%d\n", fct(a, b));
 		return (0);
 	}
-	else
-	{
-		printf("Error\n");
-		exit(98);
-	}
+
+	printf("Error\n");
+	exit(98);
 }
