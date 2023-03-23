@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 		int a;
 		int b;
 		int (*fct)(int, int);
-		char *operation
+		char *operation;
 
 		a = atoi(argv[1]);
 		b = atoi(argv[3]);
