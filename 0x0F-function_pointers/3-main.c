@@ -9,7 +9,7 @@
  * Return: depends
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	if (argc == 4)
 	{
@@ -20,14 +20,17 @@ int main(int argc, char **argv)
 		a = atoi(argv[1]);
 		b = atoi(argv[3]);
 		fct = get_op_func(argv[2]);
-		if ((*argv[2] == "/" || *argv[2] == "%") && b == 0)
+
+		if ((*argv[2] == '/' || *argv[2] == '%') && b == 0)
 		{
 			printf("Error\n");
 			exit(100);
 		}
+
 		printf("%d\n", fct(a, b));
 		return (0);
 	}
+	
 	printf("Error\n");
 	exit(98);
 }
