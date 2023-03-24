@@ -8,7 +8,7 @@
  * @n: number of strings
  */
 
-void print_strings(char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list vl;
