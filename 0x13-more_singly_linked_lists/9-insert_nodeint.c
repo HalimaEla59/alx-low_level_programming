@@ -5,7 +5,7 @@
  * @head: pointer to the listint_t head
  * @idx: the given index
  * @n: new node data
- * Rturn: @ of new node, NULL if fail
+ * Return: @ of new node, NULL if fail
  */
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
