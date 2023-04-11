@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** append_to_text_file - appends txt at the end of file
+/**
+ * append_to_text_file - appends txt at the end of file
  * @filename: file name
  * @text_content: NULL terminated string
  * Return: 1 or -1
@@ -21,7 +22,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (text_content == NULL)
 		return (1);
 
-	while (text_content [len] != '\0')
+	while (text_content[len] != '\0')
 		len++;
 
 	Write = write(fd, text_content, len);
