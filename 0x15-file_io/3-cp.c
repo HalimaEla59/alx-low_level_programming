@@ -9,8 +9,7 @@
 
 int main(int argc, char **argv)
 {
-	int fFrom, fTo;
-	int Write, Read;
+	int fFrom, fTo, Write, Read;
 	char buffer[1024];
 
 	if (argc != 3)
@@ -21,19 +20,18 @@ int main(int argc, char **argv)
 	fFrom = open(argv[1], O_RDONLY);
 	if (fFrom == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	fTo = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fTo == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	Read = read(fFrom, buffer, 1024);
-	while (Read > 0)
+	while ((Read = read(fFrom, buffer, 1024)) > 0)
 	{
-		Write = write(fTo, buffer, Read);
+		Write = write(fTO, buffer, Read);
 		if (Write == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
