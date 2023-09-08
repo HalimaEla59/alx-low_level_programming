@@ -7,7 +7,7 @@
 
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned int last, i = 0; /*last is the last key*/
+	unsigned int last, i = 0; /*last: the last key*/
 	hash_node_t *res;
 
 	if (ht == NULL)
@@ -18,7 +18,7 @@ void hash_table_print(const hash_table_t *ht)
 		last--;
 
 	/*printing:*/
-  printf("{");
+	printf("{");
 	for (i = 0; i < ht->size; i++)
 	{
 		res = ht->array[i];
