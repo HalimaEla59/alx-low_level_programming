@@ -39,7 +39,7 @@ int searching(int *array, size_t smallest, size_t biggest, int value)
 		return (mid);
 	if (smallest == biggest)
 		return (-1);
-	if (biggest > l)
+	if (biggest > smallest)
 	{
 		if (array[mid] > value)
 			return (searching(array, smallest, mid - 1, value));
