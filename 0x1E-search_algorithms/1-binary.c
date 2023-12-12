@@ -20,7 +20,7 @@ int binary_search(int *array, size_t size, int value)
 		printf("Search in array: ");
 		for (i = smallest; i < biggest; i++)
 			printf("%d, ", array[i]);
-		printf ("%d\n", array[i]);
+		printf("%d\n", array[i]);
 
 		i = smallest + (biggest - smallest) / 2;
 
