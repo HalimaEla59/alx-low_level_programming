@@ -7,6 +7,7 @@
  * @value: value to search for
  * Return: first index of value found, -1 otherwise
  */
+
 int interpolation_search(int *array, size_t size, int value)
 {
 	size_t position, smallest, biggest;
@@ -43,7 +44,7 @@ int interpolation_search(int *array, size_t size, int value)
 		else
 			biggest = position - 1;
 
-		if (smallest == high)
+		if (smallest == biggest)
 			break;
 	}
 
